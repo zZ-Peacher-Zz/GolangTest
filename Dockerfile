@@ -28,5 +28,4 @@ COPY --from=builder /app/main .
 # Mở cổng mà ứng dụng sẽ lắng nghe
 EXPOSE 8080
 
-# Chạy ứng dụng
 CMD ["./main"]
