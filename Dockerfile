@@ -25,7 +25,6 @@ WORKDIR /app
 # Sao chép file biên dịch từ builder
 COPY --from=builder /app/main .
 
-# Mở cổng mà ứng dụng sẽ lắng nghe
 EXPOSE 8080
 
 CMD ["./main"]
