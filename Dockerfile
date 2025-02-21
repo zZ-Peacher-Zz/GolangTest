@@ -22,7 +22,6 @@ FROM alpine:latest
 # Thiết lập thư mục làm việc
 WORKDIR /app
 
-# Sao chép file biên dịch từ builder
 COPY --from=builder /app/main .
 
 EXPOSE 8080
