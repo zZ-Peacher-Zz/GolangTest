@@ -19,7 +19,6 @@ RUN go build -o main .
 # Bước 2: Tạo image nhẹ hơn để chạy ứng dụng
 FROM alpine:latest
 
-# Thiết lập thư mục làm việc
 WORKDIR /app
 
 COPY --from=builder /app/main .
