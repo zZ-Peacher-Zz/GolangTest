@@ -16,7 +16,6 @@ COPY . .
 # Biên dịch ứng dụng
 RUN go build -o main .
 
-# Bước 2: Tạo image nhẹ hơn để chạy ứng dụng
 FROM alpine:latest
 
 WORKDIR /app
